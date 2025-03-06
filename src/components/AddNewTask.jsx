@@ -1,12 +1,32 @@
+import { useState } from "react";
 
-const AddNewTask = () => {
+const AddNewTask = ({handleAddNewTask}) => {
+
+    const [Task, setTask] = useState('')
+
+    const handleSaveChanges = () =>{
+        if(Task === '') {
+            return
+        }
+        handleAddNewTask(Task)
+        setTask('')
+    }
 
     return (
         <div>
             <div className="editTask">
                 <h2>Task:</h2>
-                <input className="SearchBar" type="text" placeholder="Renew driver's license"/>
-                <textarea className='TaskDescription' placeholder="description"/>
+                <input 
+                    onChange={(e) => {setTask(e.target.value)}} 
+                    value={Task} 
+                    className="SearchBar" 
+                    type="text" 
+                    placeholder="Type task here..."
+                />
+                <textarea 
+                    className='TaskDescription' 
+                    placeholder="description"
+                />
                 <div className="dateContainer">
                     <p>Due date</p>
                     <input type="date"/>
@@ -17,7 +37,7 @@ const AddNewTask = () => {
                 </div>
                 <div className="TasksFooter">
                     <button>Delete Task</button>
-                    <button>Save Changes</button>
+                    <button onClick={handleSaveChanges}>Save Changes</button>
                 </div>
             </div>
         </div>

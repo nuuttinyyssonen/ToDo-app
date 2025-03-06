@@ -1,5 +1,14 @@
 .MainContainer {
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+}
+
+/* Task manager component */
+
+.TaskManager {
+    display: flex;
 }
 
 /* Menu component */
@@ -98,6 +107,7 @@
     display: flex;
     justify-content: space-between; 
     padding-top: 10px;
+    gap: 10px;
 }
 
 .TaskDescription {
