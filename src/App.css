@@ -1,0 +1,107 @@
+.MainContainer {
+    display: flex;
+}
+
+/* Menu component */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.Tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.Lists {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Tags {
+    /* display: flex; */
+}
+
+.buttonDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.buttonDivTag {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.footer {
+    padding-top: 20px;
+}
+
+.SearchBar {
+    padding: 10px;
+    border-radius: 8px;
+    border-color: lightgrey;
+}
+
+/* Task Component */
+
+.TaskContainer {
+    
+}
+
+.Task {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 5px;
+    width: 600px /* Needs to be changed */
+}
+
+
+/* AddNewTask component */
+
+.editTask {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F4F4F4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 90%;
+}
+
+.dateContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.TagsContainer {
+    display: flex;
+    gap: 10px
+}
+
+.TasksFooter {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 10px;
+}
+
+.TaskDescription {
+    resize: none;
+    border-radius: 8px;
+    border-color: lightgrey;
+}
